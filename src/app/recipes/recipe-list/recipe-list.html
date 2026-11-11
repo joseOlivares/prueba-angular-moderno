@@ -1,0 +1,13 @@
+<section class="recipe-list">
+  <h2>Recetas</h2>
+
+  <input type="text" [value]="search()" (input)="onSearch($event)" placeholder="Buscar receta..." />
+
+  <ul class="recipe-list__items">
+    @for (recipe of filtered(); track $index) {
+      <li>
+        <app-recipe-card [recipe]="recipe" (add)="addToMenu($event)" />
+      </li>
+    }
+  </ul>
+</section>

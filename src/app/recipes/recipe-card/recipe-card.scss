@@ -1,0 +1,9 @@
+.recipe-card {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.recipe-card__label {
+  flex: 1;
+}
